@@ -126,7 +126,7 @@ function generatePassword () {
 return outPut
 }
 
-// Write password to the #password input
+
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
@@ -135,11 +135,10 @@ function writePassword() {
 
 }
 
-// Add event listener to generate button
+
 generateBtn.addEventListener("click", writePassword);
 
 for(var i = 0; i < 12; i++){
   console.log(numericCharacters[i])
 }
 
-console.log("Apple" + "Kiwi")

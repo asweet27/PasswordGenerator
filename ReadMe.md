@@ -1,0 +1,3 @@
+For this assignment, I was able to use Javascript to create a random password generator that outputs a password based on user input. Upon opening the site, the user is prompted with questions about what they want included in their password (lower case letter, special character, etc.). 
+
+User responses to the aformentioned prompts are saved to the console log and subsequently the app generates a password with whatever characters they have designated to include. I was able to complete this assignment by pilling from a plethora of JS concepts that we have learned over the last week. The magic for the actual generation of password comes from a "for" loop that runs based on how many characters the user wants to include in their password. 
