@@ -87,8 +87,9 @@ var specialCharacters = [
 var possibleSelection = []
 
 function generatePassword () {
-  var includeLowerCase = prompt("Do you want to include lower case?")
-  var includeUpperCase = prompt("Do you want to include upper case?")
+  var tellUsWhatToInclude = alert("Please answer the following questions in order to generate your pasword!")
+  var includeLowerCase = prompt("Do you want to include lower case letters?")
+  var includeUpperCase = prompt("Do you want to include upper case letters?")
   var includeNumber = prompt("Do you want to include numbers?")
   var includeSpecial = prompt("Do you want to include special characters?")
   var outPut = ""
@@ -120,7 +121,8 @@ function generatePassword () {
   console.log(passwordLength) 
 
   for (var i = 0; i < passwordLength; i++){
-    outPut = outPut + "Banana"
+    outPut = Math.floor(Math.random() * all.passwordLength);
+    password += all.passwordLength(outPut, outPut + 1);
   }
 
 return outPut
